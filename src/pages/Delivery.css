@@ -1,0 +1,261 @@
+.delivery-container {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.delivery-header {
+  margin-bottom: 2rem;
+}
+
+.delivery-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.header-underline {
+  height: 3px;
+  width: 40px;
+  background-color: #3b82f6;
+  margin-top: 0.5rem;
+  border-radius: 9999px;
+}
+
+.delivery-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.search-container {
+  position: relative;
+  width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  background-color: #f9fafb;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: white;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.filter-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.status-filter {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+  background-color: #f9fafb;
+  transition: all 0.2s;
+  color: #4b5563;
+  min-width: 120px;
+}
+
+.status-filter:focus {
+  outline: none;
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: white;
+}
+
+.delivery-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex: 1;
+  min-width: 150px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.stat-value.all {
+  color: #4b5563;
+}
+
+.stat-value.pending {
+  color: #f97316;
+}
+
+.stat-value.shipping {
+  color: #3b82f6;
+}
+
+.stat-value.delivered {
+  color: #10b981;
+}
+
+.table-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.delivery-table th {
+  background-color: #f9fafb;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.delivery-table td {
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #1f2937;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.delivery-table tr:last-child td {
+  border-bottom: none;
+}
+
+.delivery-table tr:hover td {
+  background-color: #f3f4f6;
+}
+
+.address-cell, .items-cell {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.status-badge.pending {
+  background-color: #ffedd5;
+  color: #c2410c;
+}
+
+.status-badge.shipping {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-badge.delivered {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.tracking-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+
+.tracking-button:hover {
+  color: #3b82f6;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.next-status-button {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.next-status-button:hover {
+  background-color: #bfdbfe;
+}
+
+.empty-row td {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+
+@media (max-width: 1024px) {
+  .delivery-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-container {
+    width: 100%;
+  }
+  
+  .filter-container {
+    width: 100%;
+  }
+  
+  .delivery-table {
+    display: block;
+    overflow-x: auto;
+  }
+} 
