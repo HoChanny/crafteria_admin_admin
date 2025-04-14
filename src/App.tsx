@@ -4,10 +4,10 @@ import { isAuthenticated } from "./utils/auth";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Posts from "./pages/Posts";
-import Users from "./pages/Users";
-import Approvals from "./pages/Approvals";
 import Delivery from "./pages/Delivery";
 import Ads from "./pages/Ads";
+import Approvals from "./pages/Approvals";
+import Users from "./pages/Users";
 
 function App() {
     const [authenticated, setAuthenticated] = useState(true);
