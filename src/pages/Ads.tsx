@@ -152,7 +152,7 @@ const Ads = () => {
 
                     <div className="form-group">
                         <label>링크 URL</label>
-                        <input type="url" name="linkUrl" value={newAdForm.linkUrl} onChange={handleFormChange} placeholder="https:// 생략" />
+                        <input type="url" name="linkUrl" value={newAdForm.linkUrl} onChange={handleFormChange} placeholder="https://www.example.com" />
                     </div>
 
                     <button className="upload-button" onClick={handleAdUpload}>
