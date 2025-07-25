@@ -73,7 +73,7 @@ const Ads = () => {
             const formData = new FormData();
             formData.append("imageFile", selectedFile);
 
-            const url = `/api/v1/advertisement-images?title=${newAdForm.name}&linkUrl=${newAdForm.linkUrl}`;
+            const url = `/api/v1/advertisement-images?title=${newAdForm.name}&linkurl=${newAdForm.linkUrl}`;
             console.log(url);
 
             await urlAxios.post(url, formData, {
